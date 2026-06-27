@@ -7,24 +7,23 @@
     <style>
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            /* Added space background */
-            background-image: url('https://stockcake.com/i/cosmic-space-galaxy_1172192_1039562');
+            background-image: url('https://images.stockcake.com/public/9/b/5/9b5fcb58-2c91-4b6c-86c1-3ea0f48fc717/cosmic-space-galaxy-stockcake.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             text-align: center; 
             padding: 40px 20px; 
             margin: 0;
-            color: #ffffff; /* Changed text color to white for better contrast */
+            color: #ffffff;
         }
         
         .container { 
             max-width: 450px; 
             margin: 0 auto; 
-            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            background: rgba(0, 0, 0, 0.6); 
             padding: 30px;
             border-radius: 20px;
-            backdrop-filter: blur(10px); /* Frosted glass effect */
+            backdrop-filter: blur(10px); 
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
@@ -42,51 +41,49 @@
         p.role { color: #bdc3c7; margin-bottom: 30px; font-weight: 500; }
 
         .link-wrapper { margin-bottom: 20px; }
+        
+        /* General Button Styling */
         .btn { 
             display: block; 
-            background: rgba(255, 255, 255, 0.1); 
             color: white; 
             padding: 16px; 
             text-decoration: none; 
             border-radius: 12px; 
-            border: 1px solid rgba(255, 255, 255, 0.2);
             font-weight: 600;
             transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        .btn:hover { 
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px);
-        }
+        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
-        .disclaimer { 
-            font-size: 11px; 
-            color: #bdc3c7; 
-            margin-top: 5px; 
-            display: block;
-        }
+        /* Brand Specific Colors */
+        .btn-linkedin { background-color: #0077b5; }
+        .btn-instagram { background-color: #833ab4; }
+        .btn-facebook { background-color: #f09433; }
+
+        .disclaimer { font-size: 11px; color: #bdc3c7; margin-top: 5px; display: block; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="YOUR_PROFILE_IMAGE_URL" alt="Siman Hembram" class="profile-img">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQFe_uo3XpX9Tw/profile-displayphoto-crop_800_800/B56Zxih2jkJsAI-/0/1771179568806?e=1784160000&v=beta&t=CmuH0HTrEjDYLrFTR3jeMSFi9UStcGkOHE4TiNWTtao" alt="Siman Hembram" class="profile-img">
         
         <h1>Siman Hembram</h1>
-        <p class="role">GIS Specialist | Infosys BPM</p>
+        <p class="role">GIS Specialist | Mapping Expert | Infosys BPM</p>
 
         <div class="link-wrapper">
-            <a href="https://www.linkedin.com/feed" class="btn">LinkedIn</a>
-            <span class="disclaimer">Professional Network</span>
+            <a href="https://www.linkedin.com/feed" class="btn btn-linkedin">LinkedIn</a>
+            <span class="disclaimer">Clicked the link</span>
         </div>
 
         <div class="link-wrapper">
-            <a href="https://www.instagram.com/hembramsiman" class="btn">Instagram</a>
-            <span class="disclaimer">Note: Login may be required to view</span>
+            <a href="https://www.instagram.com/hembramsiman" class="btn btn-instagram">Instagram</a>
+            <span class="disclaimer">Clicked the link</span>
         </div>
 
         <div class="link-wrapper">
-            <a href="https://www.facebook.com/siman.hembram.374" class="btn">Facebook</a>
-            <span class="disclaimer">Note: Login may be required to view</span>
+            <a href="https://www.facebook.com/siman.hembram.374" class="btn btn-facebook">Facebook</a>
+            <span class="disclaimer">Clicked the link</span>
         </div>
     </div>
 
