@@ -72,20 +72,50 @@
         <p class="role">GIS Specialist | Mapping Expert | Infosys BPM</p>
 
         <div class="link-wrapper">
-            <a href="https://www.linkedin.com/in/siman-hembram-787630263/" class="btn btn-linkedin">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/siman-hembram-787630263/" class="btn btn-linkedin" target="_blank">LinkedIn</a>
             <span class="disclaimer">Click on the link</span>
         </div>
 
         <div class="link-wrapper">
-            <a href="https://www.instagram.com/hembramsiman" class="btn btn-instagram">Instagram</a>
+            <a href="https://www.instagram.com/hembramsiman" class="btn btn-instagram" target="_blank">Instagram</a>
             <span class="disclaimer">Click on the link</span>
         </div>
 
         <div class="link-wrapper">
-            <a href="https://www.facebook.com/siman.hembram.374" class="btn btn-facebook">Facebook</a>
+            <a href="https://www.facebook.com/siman.hembram.374" class="btn btn-facebook" target="_blank">Facebook</a>
             <span class="disclaimer">Click on the link</span>
         </div>
+
+        <!-- Background Audio Element -->
+        <audio id="bg-music" loop preload="auto">
+            <source src="https://cdn.jsdelivr.net/gh/Experimen-star/My-Profile@main/Naruto%20x%20Blue%20bird%20(instrumental)%204k%20-%20AyushEdits_Universe.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
+
+    <script>
+        const music = document.getElementById("bg-music");
+
+        // Force play function
+        function triggerPlay() {
+            music.play().then(() => {
+                // Remove listeners once audio starts successfully
+                window.removeEventListener("pointerdown", triggerPlay);
+                window.removeEventListener("keydown", triggerPlay);
+                window.removeEventListener("scroll", triggerPlay);
+                window.removeEventListener("mousemove", triggerPlay);
+            }).catch(() => {});
+        }
+
+        // Try playing instantly on load
+        triggerPlay();
+
+        // Fallback trigger on the very first natural user action (scroll, move, or tap)
+        window.addEventListener("pointerdown", triggerPlay);
+        window.addEventListener("keydown", triggerPlay);
+        window.addEventListener("scroll", triggerPlay);
+        window.addEventListener("mousemove", triggerPlay);
+    </script>
 
 </body>
 </html>
