@@ -4,86 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siman Hembram | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-image: url('https://images.stockcake.com/public/9/b/5/9b5fcb58-2c91-4b6c-86c1-3ea0f48fc717/cosmic-space-galaxy-stockcake.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            text-align: center; 
-            padding: 40px 20px; 
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body { 
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.stockcake.com/public/9/b/5/9b5fcb58-2c91-4b6c-86c1-3ea0f48fc717/cosmic-space-galaxy-stockcake.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
             color: #ffffff;
         }
         
         .container { 
+            width: 100%;
             max-width: 450px; 
-            margin: 0 auto; 
-            background: rgba(0, 0, 0, 0.6); 
-            padding: 30px;
-            border-radius: 20px;
-            backdrop-filter: blur(10px); 
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(18, 18, 24, 0.85); 
+            padding: 35px 25px;
+            border-radius: 24px;
+            backdrop-filter: blur(16px); 
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            text-align: center; 
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
         }
 
         .profile-img { 
-            width: 150px; 
-            height: 150px; 
+            width: 100%; 
+            height: 100%; 
             border-radius: 50%; 
             object-fit: cover; 
-            border: 4px solid #ffffff;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-            margin-bottom: 20px; 
+            border: 3px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
         }
 
-        h1 { margin: 10px 0; font-size: 26px; color: #ffffff; }
-        p.role { color: #bdc3c7; margin-bottom: 30px; font-weight: 500; }
+        h1 { 
+            font-size: 24px; 
+            font-weight: 700;
+            margin-bottom: 6px; 
+            letter-spacing: 0.5px;
+        }
 
-        .link-wrapper { margin-bottom: 20px; }
+        p.role { 
+            color: #b3b3b3; 
+            font-size: 13px;
+            margin-bottom: 25px; 
+            font-weight: 400; 
+            letter-spacing: 0.3px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-wrapper { 
+            width: 100%;
+        }
         
-        /* General Button Styling */
         .btn { 
-            display: block; 
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             color: white; 
-            padding: 16px; 
+            padding: 14px 20px; 
             text-decoration: none; 
             border-radius: 12px; 
+            font-size: 14px;
             font-weight: 600;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        .btn:hover { transform: translateY(-3px); filter: brightness(1.2); }
 
-        /* Brand Specific Colors */
-        .btn-linkedin { background-color: #0077b5; }
-        .btn-instagram { background-color: #833ab4; }
-        .btn-facebook { background-color: #f09433; }
+        .btn:hover { 
+            transform: translateY(-2px); 
+            opacity: 0.95;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
 
-        .disclaimer { font-size: 11px; color: #bdc3c7; margin-top: 5px; display: block; }
+        .btn-linkedin { background-color: #0a66c2; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-facebook { background-color: #1877f2; }
+
+        .card-footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #9ca3af;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-footer span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="https://media.licdn.com/dms/image/v2/D5603AQFe_uo3XpX9Tw/profile-displayphoto-crop_800_800/B56Zxih2jkJsAI-/0/1771179568806?e=1788393600&v=beta&t=1t8vRfvbRB9ku-9OR67IKBFNDehL-bH6nsBdh-p7ALQ" alt="Siman Hembram" class="profile-img">
+        <div class="profile-img-container">
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQFe_uo3XpX9Tw/profile-displayphoto-crop_800_800/B56Zxih2jkJsAI-/0/1771179568806?e=1788393600&v=beta&t=1t8vRfvbRB9ku-9OR67IKBFNDehL-bH6nsBdh-p7ALQ" alt="Siman Hembram" class="profile-img">
+        </div>
         
         <h1>Siman Hembram</h1>
         <p class="role">GIS Specialist | Mapping Expert | Infosys BPM</p>
 
-        <div class="link-wrapper">
-            <a href="https://www.linkedin.com/in/siman-hembram-787630263/" class="btn btn-linkedin" target="_blank">LinkedIn</a>
-            <span class="disclaimer">Click on the link</span>
+        <div class="links-container">
+            <div class="link-wrapper">
+                <a href="https://www.linkedin.com/in/siman-hembram-787630263/" class="btn btn-linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="link-wrapper">
+                <a href="https://www.instagram.com/hembramsiman" class="btn btn-instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram Profile
+                </a>
+            </div>
+
+            <div class="link-wrapper">
+                <a href="https://www.facebook.com/siman.hembram.374" class="btn btn-facebook" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i> Facebook Profile
+                </a>
+            </div>
         </div>
 
-        <div class="link-wrapper">
-            <a href="https://www.instagram.com/hembramsiman" class="btn btn-instagram" target="_blank">Instagram</a>
-            <span class="disclaimer">Click on the link</span>
-        </div>
-
-        <div class="link-wrapper">
-            <a href="https://www.facebook.com/siman.hembram.374" class="btn btn-facebook" target="_blank">Facebook</a>
-            <span class="disclaimer">Click on the link</span>
+        <div class="card-footer">
+            <span><i class="fa-solid fa-location-dot" style="color: #ef4444;"></i> Jhargram,Gopiballavpur, India</span>
+            <span>Siman Hembram © 2026</span>
         </div>
 
         <!-- Background Audio Element -->
@@ -96,10 +168,8 @@
     <script>
         const music = document.getElementById("bg-music");
 
-        // Force play function
         function triggerPlay() {
             music.play().then(() => {
-                // Remove listeners once audio starts successfully
                 window.removeEventListener("pointerdown", triggerPlay);
                 window.removeEventListener("keydown", triggerPlay);
                 window.removeEventListener("scroll", triggerPlay);
@@ -107,10 +177,8 @@
             }).catch(() => {});
         }
 
-        // Try playing instantly on load
         triggerPlay();
 
-        // Fallback trigger on the very first natural user action (scroll, move, or tap)
         window.addEventListener("pointerdown", triggerPlay);
         window.addEventListener("keydown", triggerPlay);
         window.addEventListener("scroll", triggerPlay);
