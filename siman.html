@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siman Hembram | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body { 
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.stockcake.com/public/9/b/5/9b5fcb58-2c91-4b6c-86c1-3ea0f48fc717/cosmic-space-galaxy-stockcake.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #ffffff;
+        }
+        
+        .container { 
+            width: 100%;
+            max-width: 450px; 
+            background: rgba(18, 18, 24, 0.85); 
+            padding: 35px 25px;
+            border-radius: 24px;
+            backdrop-filter: blur(16px); 
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            text-align: center; 
+        }
+
+        .profile-img-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px auto;
+        }
+
+        .profile-img { 
+            width: 100%; 
+            height: 100%; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 3px solid rgba(255, 255, 255, 0.85);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        h1 { 
+            font-size: 24px; 
+            font-weight: 700;
+            margin-bottom: 6px; 
+            letter-spacing: 0.5px;
+        }
+
+        p.role { 
+            color: #b3b3b3; 
+            font-size: 13px;
+            margin-bottom: 25px; 
+            font-weight: 400; 
+            letter-spacing: 0.3px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-wrapper { 
+            width: 100%;
+        }
+        
+        .btn { 
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white; 
+            padding: 14px 20px; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn:hover { 
+            transform: translateY(-2px); 
+            opacity: 0.95;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
+
+        .btn-linkedin { background-color: #0a66c2; }
+        .btn-instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-facebook { background-color: #1877f2; }
+
+        .card-footer {
+            margin-top: 25px;
+            font-size: 11px;
+            color: #9ca3af;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-footer span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-img-container">
+            <!-- Replace the src below with your permanent image link if needed -->
+            <img src="https://instagram.fbbi1-1.fna.fbcdn.net/v/t51.82787-19/673076690_18165248299422794_1521928188366520963_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ig_cache_key=GNJVHihK1CR0MolAAIOCPbGf_R4VbmNDAQAB0j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=WmUa1LEKu4YQ7kNvwHREDKN&_nc_oc=AdrGwjJ5iBugsmOb5h8XWvEzuDeaYCJdaTRyb_GL6-xGo0ts17-0JN6D6MEy13fXI5OZJuCfj68QW0vB2NjlWVIl&_nc_zt=24&_nc_ht=instagram.fbbi1-1.fna&_nc_gid=pUWeLhsO5zgUjNDjJXTyoA&_nc_ss=7b6a8&_nc_ct=RQosPBUCFQIAAAA&oh=00_AQQRHJudZDU0gWwHlzQApSveN_udg0M5uYMKWh_ayztOZg&oe=6AFEF5B7" alt="Siman Hembram" class="profile-img">
+        </div>
+        
+        <h1>Siman Hembram</h1>
+        <p class="role">GIS Specialist | Mapping Expert | Infosys BPM</p>
+
+        <div class="links-container">
+            <div class="link-wrapper">
+                <a href="https://www.linkedin.com/in/siman-hembram-787630263/" class="btn btn-linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+                </a>
+            </div>
+
+            <div class="link-wrapper">
+                <a href="https://www.instagram.com/hembramsiman" class="btn btn-instagram" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Instagram Profile
+                </a>
+            </div>
+
+            <div class="link-wrapper">
+                <a href="https://www.facebook.com/siman.hembram.374" class="btn btn-facebook" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i> Facebook Profile
+                </a>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <span><i class="fa-solid fa-location-dot" style="color: #ef4444;"></i> Jhargram, Gopiballavpur, India</span>
+            <span>Siman Hembram © 2026</span>
+        </div>
+
+        <!-- Background Audio Element -->
+        <audio id="bg-music" loop preload="auto">
+            <source src="https://cdn.jsdelivr.net/gh/Experimen-star/My-Profile@main/Naruto%20x%20Blue%20bird%20(instrumental)%204k%20-%20AyushEdits_Universe.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        const music = document.getElementById("bg-music");
+
+        function triggerPlay() {
+            music.play().then(() => {
+                window.removeEventListener("pointerdown", triggerPlay);
+                window.removeEventListener("keydown", triggerPlay);
+                window.removeEventListener("scroll", triggerPlay);
+                window.removeEventListener("mousemove", triggerPlay);
+            }).catch(() => {});
+        }
+
+        triggerPlay();
+
+        window.addEventListener("pointerdown", triggerPlay);
+        window.addEventListener("keydown", triggerPlay);
+        window.addEventListener("scroll", triggerPlay);
+        window.addEventListener("mousemove", triggerPlay);
+    </script>
+
+</body>
+</html>
